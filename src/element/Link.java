@@ -1,19 +1,17 @@
 package element;
 //链结点
-public class Link {
+public class Link<T> {
 	//数据
-	public int iData;
-	public double dData;
+	public T iData;
 	//指针
 	public Link next;
 	
-	public Link(int id,double dd){
+	public Link(T id){
 		iData=id;
-		dData=dd;
 	}
 	
 	public void displayLink(){
-		System.out.print("["+iData+","+dData+"]");
+		System.out.print("["+iData+"]");
 		
 	}
 

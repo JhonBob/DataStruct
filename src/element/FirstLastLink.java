@@ -1,6 +1,9 @@
 package element;
+
+import implement.FirstLastList;
+
 //双端链表
-public class FirstLastLink {
+public class FirstLastLink implements FirstLastList<Long>{
 	public LLink first;//指向链表的第一个
 	public LLink last;//指向链表的最后一个
 	public FirstLastLink(){
@@ -11,7 +14,8 @@ public class FirstLastLink {
 		return first==null;
 	}
 	//头插入
-	public void insertFirst(long dd){
+	@Override
+	public void insertFirst(Long dd) {
 		LLink newLink=new LLink(dd);
 		if(isEmpty())
 			last=newLink;
@@ -23,7 +27,8 @@ public class FirstLastLink {
 	}
 
 	//尾插入
-	public void insertLast(long dd){
+	@Override
+	public void insertLast(Long dd) {
 		LLink newLink=new LLink(dd);
 		if(isEmpty())
 			//作为第一个
@@ -36,7 +41,8 @@ public class FirstLastLink {
 	}
 	
 	//头删除
-	public long deleteFirst(){
+	@Override
+	public Long deleteFirst(){
 		long temp=first.dData;
 		if(first.next==null)
 			last=null;

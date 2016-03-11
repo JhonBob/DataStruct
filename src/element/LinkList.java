@@ -1,7 +1,9 @@
 package element;
 
+import implement.List;
+
 //链表:效率比数组高，内存占用高
-public class LinkList {
+public class LinkList implements List {
 	
 	private Link first;
 	public LinkList(){
@@ -9,9 +11,11 @@ public class LinkList {
 	}
 	
 	//加结点
-	public void insertFirst(int id,double dd){
+	@SuppressWarnings("unchecked")
+	@Override
+	public <T> void insertFirst(T id) {
 		//新的链表结点
-		Link newLink=new Link(id, dd);
+		Link newLink=new Link(id);
 		//原结点作为新结点的下一节点
 		newLink.next=first;
 		//新节点作为首节点
@@ -23,14 +27,16 @@ public class LinkList {
 	}
 	
 	//从头删除
-	public Link deleteFirst(){
+	@Override
+	public <T> Link deleteFirst(){
 		Link temp=first;
 		first=first.next;
 		return temp;
 	}
 	
 	//查找
-	public Link find(int key){
+	@Override
+	public <T> Link find(T key) {
 		Link current=first;
 		//没找到继续找，找到了跳出循环
 		while(current.iData!=key){
@@ -44,7 +50,8 @@ public class LinkList {
 	}
 	
 	//删除指定数据
-	public Link delete(int key){
+	@Override
+	public <T> Link delete(T key) {
 		Link current=first;
 		Link previous=first;
 		while(current.iData!=key){
@@ -67,6 +74,7 @@ public class LinkList {
 	}
 	
 	//打印
+	@Override
 	public void displayList(){
 		System.out.print("all");
 		Link current=first;

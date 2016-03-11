@@ -2,11 +2,15 @@ package Application;
 
 import java.io.IOException;
 
+import olement.LinkQueue;
+
 import element.FirstLastLink;
 import element.PriorityQueue;
 
 import test.FirstLastLinkTest;
 import test.LinkListTest;
+import test.LinkQueueTest;
+import test.LinkStackTest;
 import test.PriorityQueueTest;
 import test.QueueTest;
 
@@ -37,6 +41,10 @@ public class App {
 		//链表
 		//LinkListTest.run();
 		//双端链表
-		FirstLastLinkTest.run();
+		//FirstLastLinkTest.run();
+		//链表栈
+		//LinkStackTest.run();
+		//链表双端队列
+		LinkQueueTest.run();
 	}
 }
