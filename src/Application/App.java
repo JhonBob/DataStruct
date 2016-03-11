@@ -4,15 +4,18 @@ import java.io.IOException;
 
 import olement.LinkQueue;
 
+import element.DoubleLinkList;
 import element.FirstLastLink;
 import element.PriorityQueue;
 
+import test.DoubleLinkListTest;
 import test.FirstLastLinkTest;
 import test.LinkListTest;
 import test.LinkQueueTest;
 import test.LinkStackTest;
 import test.PriorityQueueTest;
 import test.QueueTest;
+import test.SortedListTest;
 
 //数据类型：任何一个类都是一种数据类型，当一个数据存储结构表现为一个类时就是一种数据类型
 //抽象：意思就是不考虑细节的描述和实现
@@ -45,6 +48,11 @@ public class App {
 		//链表栈
 		//LinkStackTest.run();
 		//链表双端队列
-		LinkQueueTest.run();
+		//LinkQueueTest.run();
+		//有序链表
+		//SortedListTest.run();
+		//SortedListTest.runner();
+		//双向链表
+		DoubleLinkListTest.run();
 	}
 }
