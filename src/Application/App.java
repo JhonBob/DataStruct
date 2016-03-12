@@ -6,6 +6,9 @@ import olement.AnagramApp;
 import olement.FactorialApp;
 import olement.IteratorLinkListTest;
 import olement.LinkQueue;
+import olement.OrdArrayApp;
+import olement.OrdArrayAppTest;
+import olement.TowersApp;
 import olement.TriangleApp;
 
 import element.DoubleLinkList;
@@ -66,5 +69,9 @@ public class App {
 		//FactorialApp.run();
 		//µÝ¹é±äÎ»×Ö
 		//AnagramApp.run();
+		//µÝ¹é¶þ·Ö²éÕÒ
+		//OrdArrayAppTest.run();
+		//µÝ¹éººÅµËþ
+		TowersApp.run();
 	}
 }
