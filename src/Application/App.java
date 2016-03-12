@@ -2,7 +2,11 @@ package Application;
 
 import java.io.IOException;
 
+import olement.AnagramApp;
+import olement.FactorialApp;
+import olement.IteratorLinkListTest;
 import olement.LinkQueue;
+import olement.TriangleApp;
 
 import element.DoubleLinkList;
 import element.FirstLastLink;
@@ -53,6 +57,14 @@ public class App {
 		//SortedListTest.run();
 		//SortedListTest.runner();
 		//Ë«ÏòÁ´±í
-		DoubleLinkListTest.run();
+		//DoubleLinkListTest.run();
+		//Á´±íµü´úÆ÷
+		//IteratorLinkListTest.run();
+		//µÝ¹éÈý½ÇÊý×Ö
+		//TriangleApp.run();
+		//µÝ¹é½×³Ë
+		//FactorialApp.run();
+		//µÝ¹é±äÎ»×Ö
+		//AnagramApp.run();
 	}
 }
