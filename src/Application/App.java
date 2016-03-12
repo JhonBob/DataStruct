@@ -8,9 +8,12 @@ import olement.IteratorLinkListTest;
 import olement.LinkQueue;
 import olement.OrdArrayApp;
 import olement.OrdArrayAppTest;
+import olement.StackOTriangleApp;
+import olement.StackTriangleApp;
 import olement.TowersApp;
 import olement.TriangleApp;
 
+import element.DArray;
 import element.DoubleLinkList;
 import element.FirstLastLink;
 import element.PriorityQueue;
@@ -20,6 +23,7 @@ import test.FirstLastLinkTest;
 import test.LinkListTest;
 import test.LinkQueueTest;
 import test.LinkStackTest;
+import test.MergeSortApp;
 import test.PriorityQueueTest;
 import test.QueueTest;
 import test.SortedListTest;
@@ -72,6 +76,12 @@ public class App {
 		//µÝ¹é¶þ·Ö²éÕÒ
 		//OrdArrayAppTest.run();
 		//µÝ¹éººÅµËþ
-		TowersApp.run();
+		//TowersApp.run();
+		//¹é²¢ÅÅÐò
+		//MergeSortApp.run();
+		//È¡ÏûµÝ¹é
+		//StackTriangleApp.run();
+		//Õ»Ïû³ýµÝ¹é
+		StackOTriangleApp.run();
 	}
 }
