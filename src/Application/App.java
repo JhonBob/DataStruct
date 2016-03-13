@@ -18,6 +18,8 @@ import element.DoubleLinkList;
 import element.FirstLastLink;
 import element.PriorityQueue;
 
+import test.ArrayQuickApp;
+import test.ArrayQuickApp2;
 import test.DoubleLinkListTest;
 import test.FirstLastLinkTest;
 import test.LinkListTest;
@@ -26,6 +28,7 @@ import test.LinkStackTest;
 import test.MergeSortApp;
 import test.PriorityQueueTest;
 import test.QueueTest;
+import test.ShellSortApp;
 import test.SortedListTest;
 
 //数据类型：任何一个类都是一种数据类型，当一个数据存储结构表现为一个类时就是一种数据类型
@@ -82,6 +85,12 @@ public class App {
 		//取消递归
 		//StackTriangleApp.run();
 		//栈消除递归
-		StackOTriangleApp.run();
+		//StackOTriangleApp.run();
+		//希尔排序（基于插入排序）
+		//ShellSortApp.run();
+		//快速排序
+		//ArrayQuickApp.run();
+		//快速排序2，三项数据取中间，小划分使用插入排序
+		ArrayQuickApp2.run();
 	}
 }
