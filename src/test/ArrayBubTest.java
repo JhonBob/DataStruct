@@ -2,7 +2,7 @@ package test;
 
 import java.util.Random;
 
-import element.ArrayBub;
+import sortArray.ArrayBub;
 
 
 public class ArrayBubTest {

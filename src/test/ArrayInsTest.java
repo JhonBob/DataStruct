@@ -3,7 +3,7 @@ package test;
 
 import java.util.Random;
 
-import element.ArrayIns;
+import sortArray.ArrayIns;
 
 
 public class ArrayInsTest {

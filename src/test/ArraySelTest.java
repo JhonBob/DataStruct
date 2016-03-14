@@ -2,7 +2,7 @@ package test;
 
 import java.util.Random;
 
-import element.ArraySel;
+import sortArray.ArraySel;
 
 
 public class ArraySelTest {

@@ -1,6 +1,6 @@
 package test;
 
-import element.ArraySh;
+import sortArray.ArraySh;
 
 public class ShellSortApp {
 

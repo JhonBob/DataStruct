@@ -1,7 +1,6 @@
 package test;
 
-import element.ArrayQuick;
-import element.ArraySh;
+import sortArray.ArrayQuick;
 
 public class ArrayQuickApp {
 	public static void run(){

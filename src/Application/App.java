@@ -1,41 +1,21 @@
 package Application;
 
+import hashchain.HashChainApp;
+import heap.HeapApp;
+
 import java.io.IOException;
-
-import olement.AnagramApp;
-import olement.FactorialApp;
-import olement.IteratorLinkListTest;
-import olement.LinkQueue;
-import olement.OrdArrayApp;
-import olement.OrdArrayAppTest;
-import olement.StackOTriangleApp;
-import olement.StackTriangleApp;
-import olement.TowersApp;
-import olement.TriangleApp;
-
-import element.DArray;
-import element.DoubleLinkList;
-import element.FirstLastLink;
-import element.PriorityQueue;
-
-import test.ArrayQuickApp;
-import test.ArrayQuickApp2;
-import test.DoubleLinkListTest;
-import test.FirstLastLinkTest;
-import test.LinkListTest;
-import test.LinkQueueTest;
-import test.LinkStackTest;
-import test.MergeSortApp;
-import test.PriorityQueueTest;
-import test.QueueTest;
-import test.ShellSortApp;
-import test.SortedListTest;
-import tree.TreeApp;
-import tree234.Tree234App;
 
 //数据类型：任何一个类都是一种数据类型，当一个数据存储结构表现为一个类时就是一种数据类型
 //抽象：意思就是不考虑细节的描述和实现
 //栈和队列就是抽象数据类型（ADT）
+//优先级队列 用有序数组实现，删除最大数O(1)，插入慢
+//堆实现优先级队列，插入删除都快（O(logN)）
+//堆：是一种树，特殊的二叉树
+	//1.完全的二叉树,除树的最后一层节点不需要是满的，其他每一层从左往右都必须是满的
+	//2.常常是用数组来实现
+	//3.堆中的每一个节点都满足堆的条件，父节点的关键字大于所有子节点
+//堆是弱序的
+
 
 //无序数组：查找删除慢，插入快
 //有序数组：插入，删除慢，查找快
@@ -120,9 +100,18 @@ public class App {
 		//非叶节点：L=D+1  
 		//插入数据总是插在叶节点
 		//Tree234App.run();
+		
 		//哈希表：O(1),底层数据结构为数组，不能有序遍历，查找插入速度快，可扩大小
 		//通过键来找值
 		//冲突：不同关键字经过哈希化得到的数组下标出现重复
-		//解决冲突：开放地址法 （线性探测 二次探测  在哈希）        链地址法
+		//解决冲突：开放地址法 （线性探测  二次探测  再哈希）        链地址法
+		//线性探测
+		 //HashTableApp.run();
+		//再哈希
+		//HashDoubleTableApp.run();
+		//链地址法
+		//HashChainApp.run();
+		//堆
+		HeapApp.run();
 	}
 }

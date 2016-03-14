@@ -1,6 +1,6 @@
 package test;
 
-import element.DArray;
+import sortArray.DArray;
 
 public class MergeSortApp {
       public static void run(){
