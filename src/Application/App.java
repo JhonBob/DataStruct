@@ -5,6 +5,8 @@ import heap.HeapApp;
 
 import java.io.IOException;
 
+import sortArray.HeapSortApp;
+
 //数据类型：任何一个类都是一种数据类型，当一个数据存储结构表现为一个类时就是一种数据类型
 //抽象：意思就是不考虑细节的描述和实现
 //栈和队列就是抽象数据类型（ADT）
@@ -112,6 +114,8 @@ public class App {
 		//链地址法
 		//HashChainApp.run();
 		//堆
-		HeapApp.run();
+		//HeapApp.run();
+		//堆排序
+		HeapSortApp.run();
 	}
 }
